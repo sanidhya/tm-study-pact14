@@ -1,7 +1,7 @@
 CFLAGS   += -w -DSTM -I$(STM)/include
 CPPFLAGS := $(CFLAGS)
 LDFLAGS  += -L$(STM)/lib
-LIBS     += -lstm -L../rapl-power -lrapl
+LIBS     += -lstm #-L../rapl-power -lrapl
 
 
 

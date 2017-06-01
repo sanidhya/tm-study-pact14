@@ -1,7 +1,7 @@
 .PHONY: default
 default: $(PROG)
 
-LIBS += -L../rapl-power -lrapl
+#LIBS += -L../rapl-power -lrapl
 
 .PHONY: clean
 clean:

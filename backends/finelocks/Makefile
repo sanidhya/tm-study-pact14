@@ -1,7 +1,7 @@
 CFLAGS   += -w -DHTM $(LOCKS) -I$(STM)
 CPPFLAGS := $(CFLAGS)
 LDFLAGS  += -L$(STM)
-LIBS     += -ltl2 -L../rapl-power -lrapl
+LIBS     += -ltl2 #-L../rapl-power -lrapl
 
 .PHONY: default
 default: $(PROG)

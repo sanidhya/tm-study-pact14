@@ -19,18 +19,18 @@ else
     prob=$3
 fi
 
-if [[ $# != 1 ]] ; then
-    cd ssync
-    make LOCK_VERSION="-DUSE_$alias"
-    rc=$?
-    if [[ $rc != 0 ]] ; then
-         echo ""
-         echo "=================================== ERROR BUILDING with lock $alias ==================================="
-         echo ""
-         exit 1
-    fi
-    cd ..;
-fi
+# if [[ $# != 1 ]] ; then
+#     cd ssync
+#     make LOCK_VERSION="-DUSE_$alias"
+#     rc=$?
+#     if [[ $rc != 0 ]] ; then
+#          echo ""
+#          echo "=================================== ERROR BUILDING with lock $alias ==================================="
+#          echo ""
+#          exit 1
+#     fi
+#     cd ..;
+# fi
 
 for F in $FOLDERS
 do
